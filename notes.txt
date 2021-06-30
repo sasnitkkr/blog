@@ -14,4 +14,12 @@
    b. npm i express ejs loadash
 
 3. gitignore nodemodules and commit initial files
+
+4. 
+Challenge 1 :- Render home.ejs with hello mssg in it
+Challenge 2 :- Render paragraph in home.ejs with value from backend
+Challenge 3 :- Add ejs layout partials - header & footer to existing home page
+Challenge 4 :- Move header and footer to partials inside views
+Challenge 5 :- setup /about & /contact route with about & contact pages rendered
+Challenge 6 :- Change links in nav-bar for home about and contact
    
