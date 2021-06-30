@@ -1,0 +1,17 @@
+1. Set up files
+    a. mkdir blog
+    b. cd blog/
+    c. git init 
+    d. git branch -M main
+    e. touch app.js notes.txt
+    f. git add .
+    g. git commit -m "create app.js and notes.txt"
+    h. git remote add origin https://github.com/sasnitkkr/blog.git
+    i. git push -u origin main
+    {first one commit on main then link remote}
+
+2. a.npm init
+   b. npm i express ejs loadash
+
+3. gitignore nodemodules and commit initial files
+   
