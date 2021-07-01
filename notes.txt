@@ -22,4 +22,9 @@ Challenge 3 :- Add ejs layout partials - header & footer to existing home page
 Challenge 4 :- Move header and footer to partials inside views
 Challenge 5 :- setup /about & /contact route with about & contact pages rendered
 Challenge 6 :- Change links in nav-bar for home about and contact
+Challenge 7 :- Setup /compose route
+Challenge 8 :- Update /compose to get data in console
+Challenge 9 :- Transform compose page to add title and post with css
+Challenge 10 :- create post object consisting title & body in server
+Challenge 11 :-
    
