@@ -33,4 +33,5 @@ Challenge 14 :- Replace with for each loop
 Challenge 15 :- print post title & body in home.ejs
 Challenge 16 :- consolel log posts/new-route using route-parameters
 Challenge 17 :- console log match found if requested route-title is found
-Challenge 18 :- 
+Challenge 18 :- convert requested title and post title to lower case irrespective of cases and -, _ using nodash
+Challenge 19 :- render a standalone page to each post

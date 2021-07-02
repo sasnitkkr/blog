@@ -2,6 +2,7 @@
 const express = require("express");
 const ejs = require("ejs");
 const PORT = 3000;
+const _ = require('lodash');
 
 const app = express();
 
@@ -22,6 +23,16 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 /* arrays */
 
 const posts = [];
+
+/* functions */
+
+const ellipsify = (str) => {
+  if(str.length>100)
+  {
+    return (str.substring(0, 100)+" ...");
+  }
+  return str;
+}
 
 /* --- ROUTES --- */
 
@@ -65,17 +76,24 @@ app.post("/compose",(req, res)=>{
 });
 
 app.get("/posts/:title",(req, res)=>{
-  const requestTitle = req.params.title;
+  const requestTitle = _.lowerCase(req.params.title);
   let i;
   for(i=0; i<posts.length; i++){
-    if(posts[i].title.toLowerCase === requestTitle.toLowerCase){
+    const currentTitle = posts[i].title.toLowerCase();
+    console.log(currentTitle);
+    if( currentTitle === requestTitle){
       break;
     }
   }
   if(i==posts.length)
     console.log("NOT MATCHED");
-  else
-    console.log("MATCHED");
+  else{
+    // console.log(i, posts[i].postTitle, posts[i].postBody);
+    res.render("post",{
+      postTitle : posts[i].title ,
+      postBody : posts[i].content
+    });
+  }
 
 });
 
