@@ -26,5 +26,11 @@ Challenge 7 :- Setup /compose route
 Challenge 8 :- Update /compose to get data in console
 Challenge 9 :- Transform compose page to add title and post with css
 Challenge 10 :- create post object consisting title & body in server
-Challenge 11 :-
-   
+Challenge 11 :- create global arr for storing posts
+Challenge 12 :- render posts in home.ejs
+Challenge 13 :- print all title in posts in console via home.ejs
+Challenge 14 :- Replace with for each loop
+Challenge 15 :- print post title & body in home.ejs
+Challenge 16 :- consolel log posts/new-route using route-parameters
+Challenge 17 :- console log match found if requested route-title is found
+Challenge 18 :- 
