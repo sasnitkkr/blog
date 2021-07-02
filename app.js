@@ -26,13 +26,6 @@ const posts = [];
 
 /* functions */
 
-const ellipsify = (str) => {
-  if(str.length>100)
-  {
-    return (str.substring(0, 100)+" ...");
-  }
-  return str;
-}
 
 /* --- ROUTES --- */
 
@@ -80,7 +73,6 @@ app.get("/posts/:title",(req, res)=>{
   let i;
   for(i=0; i<posts.length; i++){
     const currentTitle = posts[i].title.toLowerCase();
-    console.log(currentTitle);
     if( currentTitle === requestTitle){
       break;
     }

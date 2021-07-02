@@ -35,3 +35,5 @@ Challenge 16 :- consolel log posts/new-route using route-parameters
 Challenge 17 :- console log match found if requested route-title is found
 Challenge 18 :- convert requested title and post title to lower case irrespective of cases and -, _ using nodash
 Challenge 19 :- render a standalone page to each post
+Challenge 20 :- trim post body in home page
+Challenge 21 :- add read more
