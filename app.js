@@ -31,28 +31,29 @@ const posts = [];
 
 /* HOME ROUTE */
 app.get("/", (req, res)=>{
-
+  console.log(posts);
   res.render("home",{
     home_start_content : homeStartingContent,
     posts : posts
   });
 });
 
-/* ABOUT ROUTE */
 
+/* ABOUT ROUTE */
 app.get("/about", (req, res)=>{
   res.render("about",{
     about_content : aboutContent
   });
 });
 
-/* CONTACT ROUTE */
 
+/* CONTACT ROUTE */
 app.get("/contact", (req, res) => {
   res.render("contact",{
     contact_content : contactContent
   });
 });
+
 
 /* COMPOSE ROUTE */
 app.get("/compose", (req, res) =>{
@@ -77,9 +78,9 @@ app.get("/posts/:title",(req, res)=>{
       break;
     }
   }
-  if(i==posts.length)
+  if(i==posts.length){
     console.log("NOT MATCHED");
-  else{
+  }else{
     // console.log(i, posts[i].postTitle, posts[i].postBody);
     res.render("post",{
       postTitle : posts[i].title ,

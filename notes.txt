@@ -37,3 +37,5 @@ Challenge 18 :- convert requested title and post title to lower case irrespectiv
 Challenge 19 :- render a standalone page to each post
 Challenge 20 :- trim post body in home page
 Challenge 21 :- add read more
+
+Bug 1 :- Does Not allow posts title such as 30-7-2021 (i.e. does not allow '-')
